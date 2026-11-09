@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DARKOSIES Video Enhancer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>DARKOSIES</h1>
+        <p>VIDEO ENHANCER</p>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <h2>Enhance Your Videos.</h2>
+            <p>Make every frame look better.</p>
+        </section>
+
+        <section class="upload-box">
+            <h3>Upload Your Video</h3>
+
+            <input
+                type="file"
+                id="videoInput"
+                accept="video/*"
+            >
+
+            <video id="videoPreview" controls hidden></video>
+        </section>
+
+        <section class="settings">
+            <h3>Enhancement Settings</h3>
+
+            <label>Brightness</label>
+            <input type="range" id="brightness"
+                   min="50" max="150" value="100">
+
+            <label>Contrast</label>
+            <input type="range" id="contrast"
+                   min="50" max="200" value="100">
+
+            <label>Saturation</label>
+            <input type="range" id="saturation"
+                   min="0" max="200" value="100">
+        </section>
+
+        <button id="testButton">
+            TEST CONNECTION
+        </button>
+
+        <p id="status">Waiting for JavaScript...</p>
+    </main>
+
+    <footer>
+        <p>Created by DARKOSIES</p>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
